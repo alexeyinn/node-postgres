@@ -11,3 +11,13 @@ create TABLE post (
     user_id INTEGER,
     FOREIGN KEY (user_id) REFERENCES person (id)
 );
+
+-- ДЛя редактирования таблицы
+-- ALTER TABLE post
+--   ALTER COLUMN content TYPE varchar(500);
+
+-- Для дампа базы
+-- pg_dump -U postgres -d node_postgres > C:\Users\alexe\Desktop\projects\dumpedBase.sql
+
+-- Для восстановления из дампа
+-- psql -U postgres basefromdump < C:\Users\alexe\Desktop\projects\dumpedBase.sql
